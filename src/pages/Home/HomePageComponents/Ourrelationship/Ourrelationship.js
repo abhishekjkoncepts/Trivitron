@@ -14,46 +14,46 @@ const Ourrelationship = () => {
   const slidy = [
     // 1
     <Grid container>
-      <Grid xs={12} sm={12} md={7} lg={7}
-       sx={{ backgroundColor: "white" }}
-       >
+      <Grid xs={12} sm={12} md={7} lg={7} sx={{ backgroundColor: "white" }}>
         <Box
           sx={{
             display: "flex",
-            flexDirection: "column",
             justifyContent: "center",
+            alignItems: "center",
           }}
         >
-          <Box sx={{}}>
-            <Typography
-              sx={{
-                fontSize: "13px",
-                fontWeight: "700",
-                fontFamily: "Poppins, sans-serif",
-                color: "#0BAEB2",
-                letterSpacing: "4%",
-                lineHeight: "19.5px",
-                textAlign: "left",
-              }}
-            >
-              01
-            </Typography>
-          </Box>
+          <Box
+          //  sx={{ backgroundColor: "green" }}
+           >
+            <Box sx={{ width: "665px" , justifyContent:"column" , marginTop:"40px" , marginBottom:"30px"}}>
+              <Typography
+                sx={{
+                  fontSize: "13px",
+                  fontWeight: "700",
+                  fontFamily: "Poppins, sans-serif",
+                  color: "#0BAEB2",
+                  letterSpacing: "4%",
+                  lineHeight: "19.5px",
+                  textAlign: "left",
+                }}
+              >
+                01
+              </Typography>
 
-          <Box>
-            <Typography
-              sx={{
-                fontFamily: "Poppins, sans-serif",
-                fontWeight: "300",
-                fontSize: "22px",
-                lineHeight: "33px",
-                letterSpacing: "8%",
-                color: "#0BAEB2",
-                textAlign: "left",
-              }}
-            >
-              OUR RELATIONSHIP
-            </Typography>
+              <Typography
+                sx={{
+                  fontFamily: "Poppins, sans-serif",
+                  fontWeight: "300",
+                  fontSize: "22px",
+                  lineHeight: "33px",
+                  letterSpacing: "8%",
+                  color: "#0BAEB2",
+                  textAlign: "left",
+                }}
+              >
+                OUR RELATIONSHIP
+              </Typography>
+            </Box>
           </Box>
         </Box>
 
@@ -67,12 +67,12 @@ const Ourrelationship = () => {
           <Box
             sx={{
               width: "90%",
-              // height: "317px",
-            
-              // backgroundColor: "green",
+              marginTop:"20px", 
+              marginBottom:"40px",
+              // backgroundColor:"red",
+              height:"320px"
             }}
           >
-
             <Typography
               sx={{
                 fontFamily: "Poppins, sans-serif",
@@ -80,12 +80,13 @@ const Ourrelationship = () => {
                 fontSize: "24px",
                 lineHeight: "36px",
                 letterSpacing: "8%",
-                color: "#6B6666",  
+                color: "#6B6666",
                 // marginTop: "30px",
-              marginBottom: "50px",
+                marginBottom: "0px",
               }}
             >
-              An inclusive culture is a pre-requisite if we aspire <br/> to serve{" "}
+              An inclusive culture is a pre-requisite if we aspire <br /> to
+              serve{" "}
               <span
                 style={{
                   fontSize: "24px",
@@ -131,8 +132,12 @@ const Ourrelationship = () => {
         </Box>
       </Grid>
 
-      <Grid xs={12} sm={12} md={5} lg={5} 
-      // sx={{ backgroundColor: "green" }}
+      <Grid
+        xs={12}
+        sm={12}
+        md={5}
+        lg={5}
+        // sx={{ backgroundColor: "green" }}
       >
         <Box
           component="img"
@@ -146,17 +151,18 @@ const Ourrelationship = () => {
     </Grid>,
     // 2
     <Grid container>
-      <Grid xs={12} sm={12} md={7} lg={7}
-      //  sx={{ backgroundColor: "white" }}
-       >
+    <Grid xs={12} sm={12} md={7} lg={7} sx={{ backgroundColor: "white" }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
-          <Box sx={{}}>
+        //  sx={{ backgroundColor: "green" }}
+         >
+          <Box sx={{ width: "665px" , justifyContent:"column" , marginTop:"40px" , marginBottom:"30px"}}>
             <Typography
               sx={{
                 fontSize: "13px",
@@ -170,9 +176,7 @@ const Ourrelationship = () => {
             >
               01
             </Typography>
-          </Box>
 
-          <Box>
             <Typography
               sx={{
                 fontFamily: "Poppins, sans-serif",
@@ -188,269 +192,6 @@ const Ourrelationship = () => {
             </Typography>
           </Box>
         </Box>
-
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <Box
-            sx={{
-              width: "90%",
-              // height: "317px",
-            
-              // backgroundColor: "green",
-            }}
-          >
-
-            <Typography
-              sx={{
-                fontFamily: "Poppins, sans-serif",
-                fontWeight: "300",
-                fontSize: "24px",
-                lineHeight: "36px",
-                letterSpacing: "8%",
-                color: "#6B6666",  
-                // marginTop: "30px",
-              marginBottom: "50px",
-              }}
-            >
-              An inclusive culture is a pre-requisite if we aspire <br/> to serve{" "}
-              <span
-                style={{
-                  fontSize: "24px",
-                  fontWeight: "700",
-                  lineHeight: "36px",
-                  fontFamily: "Poppins, sans-serif",
-                  color: "#0BAEB2",
-                }}
-              >
-                the eight billion people
-              </span>{" "}
-              on our planet. <br />
-              As a diverse organization, we can better relate to the people –
-              whether customers or patients <br />– their communities and the
-              specific <br />
-              challenges they face.
-              <span
-                style={{
-                  fontSize: "24px",
-                  fontWeight: "700",
-                  lineHeight: "36px",
-                  fontFamily: "Poppins, sans-serif",
-                  color: "#0BAEB2",
-                }}
-              >
-                {"  "}Diversity, equity, and inclusion
-              </span>{" "}
-              are therefore important aspects of <br />
-              our wider{" "}
-              <span
-                style={{
-                  fontSize: "24px",
-                  fontWeight: "700",
-                  lineHeight: "36px",
-                  fontFamily: "Poppins, sans-serif",
-                  color: "#0BAEB2",
-                }}
-              >
-                responsibilities.
-              </span>
-            </Typography>
-          </Box>
-        </Box>
-      </Grid>
-
-      <Grid xs={12} sm={12} md={5} lg={5}
-      //  sx={{ backgroundColor: "green" }}
-       >
-        <Box
-          component="img"
-          sx={{
-            height: "100%",
-            width: "100%",
-          }}
-          src={sample1}
-        />
-      </Grid>
-    </Grid>,
-     // 3
-     <Grid container>
-     <Grid xs={12} sm={12} md={7} lg={7}
-      // sx={{ backgroundColor: "white" }}
-      >
-       <Box
-         sx={{
-           display: "flex",
-           flexDirection: "column",
-           justifyContent: "center",
-         }}
-       >
-         <Box sx={{}}>
-           <Typography
-             sx={{
-               fontSize: "13px",
-               fontWeight: "700",
-               fontFamily: "Poppins, sans-serif",
-               color: "#0BAEB2",
-               letterSpacing: "4%",
-               lineHeight: "19.5px",
-               textAlign: "left",
-             }}
-           >
-             01
-           </Typography>
-         </Box>
-
-         <Box>
-           <Typography
-             sx={{
-               fontFamily: "Poppins, sans-serif",
-               fontWeight: "300",
-               fontSize: "22px",
-               lineHeight: "33px",
-               letterSpacing: "8%",
-               color: "#0BAEB2",
-               textAlign: "left",
-             }}
-           >
-             OUR RELATIONSHIP
-           </Typography>
-         </Box>
-       </Box>
-
-       <Box
-         sx={{
-           display: "flex",
-           justifyContent: "center",
-           alignItems: "center",
-         }}
-       >
-         <Box
-           sx={{
-             width: "90%",
-             // height: "317px",
-           
-            //  backgroundColor: "green",
-           }}
-         >
-
-           <Typography
-             sx={{
-               fontFamily: "Poppins, sans-serif",
-               fontWeight: "300",
-               fontSize: "24px",
-               lineHeight: "36px",
-               letterSpacing: "8%",
-               color: "#6B6666",  
-               // marginTop: "30px",
-             marginBottom: "50px",
-             }}
-           >
-             An inclusive culture is a pre-requisite if we aspire <br/> to serve{" "}
-             <span
-               style={{
-                 fontSize: "24px",
-                 fontWeight: "700",
-                 lineHeight: "36px",
-                 fontFamily: "Poppins, sans-serif",
-                 color: "#0BAEB2",
-               }}
-             >
-               the eight billion people
-             </span>{" "}
-             on our planet. <br />
-             As a diverse organization, we can better relate to the people –
-             whether customers or patients <br />– their communities and the
-             specific <br />
-             challenges they face.
-             <span
-               style={{
-                 fontSize: "24px",
-                 fontWeight: "700",
-                 lineHeight: "36px",
-                 fontFamily: "Poppins, sans-serif",
-                 color: "#0BAEB2",
-               }}
-             >
-               {"  "}Diversity, equity, and inclusion
-             </span>{" "}
-             are therefore important aspects of <br />
-             our wider{" "}
-             <span
-               style={{
-                 fontSize: "24px",
-                 fontWeight: "700",
-                 lineHeight: "36px",
-                 fontFamily: "Poppins, sans-serif",
-                 color: "#0BAEB2",
-               }}
-             >
-               responsibilities.
-             </span>
-           </Typography>
-         </Box>
-       </Box>
-     </Grid>
-
-     <Grid xs={12} sm={12} md={5} lg={5} 
-    //  sx={{ backgroundColor: "green" }}
-     >
-       <Box
-         component="img"
-         sx={{
-           height: "100%",
-           width: "100%",
-         }}
-         src={sample2}
-       />
-     </Grid>
-   </Grid>,
-    // 4
-    <Grid container>
-    <Grid xs={12} sm={12} md={7} lg={7}
-    //  sx={{ backgroundColor: "white" }}
-     >
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-        }}
-      >
-        <Box sx={{}}>
-          <Typography
-            sx={{
-              fontSize: "13px",
-              fontWeight: "700",
-              fontFamily: "Poppins, sans-serif",
-              color: "#0BAEB2",
-              letterSpacing: "4%",
-              lineHeight: "19.5px",
-              textAlign: "left",
-            }}
-          >
-            01
-          </Typography>
-        </Box>
-
-        <Box>
-          <Typography
-            sx={{
-              fontFamily: "Poppins, sans-serif",
-              fontWeight: "300",
-              fontSize: "22px",
-              lineHeight: "33px",
-              letterSpacing: "8%",
-              color: "#0BAEB2",
-              textAlign: "left",
-            }}
-          >
-            OUR RELATIONSHIP
-          </Typography>
-        </Box>
       </Box>
 
       <Box
@@ -463,12 +204,12 @@ const Ourrelationship = () => {
         <Box
           sx={{
             width: "90%",
-            // height: "317px",
-          
-            // backgroundColor: "green",
+            marginTop:"20px", 
+            marginBottom:"40px",
+            // backgroundColor:"red",
+            height:"320px"
           }}
         >
-
           <Typography
             sx={{
               fontFamily: "Poppins, sans-serif",
@@ -476,12 +217,13 @@ const Ourrelationship = () => {
               fontSize: "24px",
               lineHeight: "36px",
               letterSpacing: "8%",
-              color: "#6B6666",  
+              color: "#6B6666",
               // marginTop: "30px",
-            marginBottom: "50px",
+              marginBottom: "0px",
             }}
           >
-            An inclusive culture is a pre-requisite if we aspire <br/> to serve{" "}
+            An inclusive culture is a pre-requisite if we aspire <br /> to
+            serve{" "}
             <span
               style={{
                 fontSize: "24px",
@@ -527,8 +269,149 @@ const Ourrelationship = () => {
       </Box>
     </Grid>
 
-    <Grid xs={12} sm={12} md={5} lg={5}
-    // sx={{ backgroundColor: "green" }}
+    <Grid
+      xs={12}
+      sm={12}
+      md={5}
+      lg={5}
+      // sx={{ backgroundColor: "green" }}
+    >
+      <Box
+        component="img"
+        sx={{
+          height: "100%",
+          width: "100%",
+        }}
+        src={sample1}
+      />
+    </Grid>
+  </Grid>,
+    // 3
+    <Grid container>
+    <Grid xs={12} sm={12} md={7} lg={7} sx={{ backgroundColor: "white" }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Box
+        //  sx={{ backgroundColor: "green" }}
+         >
+          <Box sx={{ width: "665px" , justifyContent:"column" , marginTop:"40px" , marginBottom:"30px"}}>
+            <Typography
+              sx={{
+                fontSize: "13px",
+                fontWeight: "700",
+                fontFamily: "Poppins, sans-serif",
+                color: "#0BAEB2",
+                letterSpacing: "4%",
+                lineHeight: "19.5px",
+                textAlign: "left",
+              }}
+            >
+              01
+            </Typography>
+
+            <Typography
+              sx={{
+                fontFamily: "Poppins, sans-serif",
+                fontWeight: "300",
+                fontSize: "22px",
+                lineHeight: "33px",
+                letterSpacing: "8%",
+                color: "#0BAEB2",
+                textAlign: "left",
+              }}
+            >
+              OUR RELATIONSHIP
+            </Typography>
+          </Box>
+        </Box>
+      </Box>
+
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Box
+          sx={{
+            width: "90%",
+            marginTop:"20px", 
+            marginBottom:"40px",
+            // backgroundColor:"red",
+            height:"320px"
+          }}
+        >
+          <Typography
+            sx={{
+              fontFamily: "Poppins, sans-serif",
+              fontWeight: "300",
+              fontSize: "24px",
+              lineHeight: "36px",
+              letterSpacing: "8%",
+              color: "#6B6666",
+              // marginTop: "30px",
+              marginBottom: "0px",
+            }}
+          >
+            An inclusive culture is a pre-requisite if we aspire <br /> to
+            serve{" "}
+            <span
+              style={{
+                fontSize: "24px",
+                fontWeight: "700",
+                lineHeight: "36px",
+                fontFamily: "Poppins, sans-serif",
+                color: "#0BAEB2",
+              }}
+            >
+              the eight billion people
+            </span>{" "}
+            on our planet. <br />
+            As a diverse organization, we can better relate to the people –
+            whether customers or patients <br />– their communities and the
+            specific <br />
+            challenges they face.
+            <span
+              style={{
+                fontSize: "24px",
+                fontWeight: "700",
+                lineHeight: "36px",
+                fontFamily: "Poppins, sans-serif",
+                color: "#0BAEB2",
+              }}
+            >
+              {"  "}Diversity, equity, and inclusion
+            </span>{" "}
+            are therefore important aspects of <br />
+            our wider{" "}
+            <span
+              style={{
+                fontSize: "24px",
+                fontWeight: "700",
+                lineHeight: "36px",
+                fontFamily: "Poppins, sans-serif",
+                color: "#0BAEB2",
+              }}
+            >
+              responsibilities.
+            </span>
+          </Typography>
+        </Box>
+      </Box>
+    </Grid>
+
+    <Grid
+      xs={12}
+      sm={12}
+      md={5}
+      lg={5}
+      // sx={{ backgroundColor: "green" }}
     >
       <Box
         component="img"
@@ -540,8 +423,7 @@ const Ourrelationship = () => {
       />
     </Grid>
   </Grid>,
-
-   
+  
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -569,7 +451,7 @@ const Ourrelationship = () => {
       <Box
         sx={{
           position: "absolute",
-          marginTop: "-60px",
+          marginTop: "-40px",
           width: "122px",
           height: "32px",
           // backgroundColor: "black",
