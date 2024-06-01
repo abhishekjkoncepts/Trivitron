@@ -454,7 +454,7 @@ const Ourrelationship = () => {
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
-          marginLeft: "30px",
+          marginLeft: "35px",
         }}
       >
         {/* left arrow */}
