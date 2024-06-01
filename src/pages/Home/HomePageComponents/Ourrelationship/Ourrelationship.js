@@ -17,15 +17,11 @@ const Ourrelationship = () => {
       <Grid xs={12} sm={12} md={7} lg={7} sx={{ backgroundColor: "white" }}>
         <Box
           sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
+            marginLeft:"35px",
+            marginTop:"20px"
           }}
         >
-          <Box
-          //  sx={{ backgroundColor: "green" }}
-           >
-            <Box sx={{ width: "665px" , justifyContent:"column" , marginTop:"40px" , marginBottom:"30px"}}>
+            <Box sx={{ display:"flex",  flexDirection:"column",}}>
               <Typography
                 sx={{
                   fontSize: "13px",
@@ -53,8 +49,7 @@ const Ourrelationship = () => {
               >
                 OUR RELATIONSHIP
               </Typography>
-            </Box>
-          </Box>
+        </Box>
         </Box>
 
         <Box
@@ -70,7 +65,7 @@ const Ourrelationship = () => {
               marginTop:"20px", 
               marginBottom:"40px",
               // backgroundColor:"red",
-              height:"320px"
+              height:"100%"
             }}
           >
             <Typography
