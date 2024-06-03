@@ -12,9 +12,9 @@ import Ourrelationship from "./pages/Home/HomePageComponents/Ourrelationship/Our
 const App = () => {
   return (
     <Box>
-      {/* <Navigation /> */}
+      <Navigation />
       {/* <Eksahishuruaat/> */}
-      <Ourrelationship/>
+      {/* <Ourrelationship/> */}
     </Box>
   );
 };
