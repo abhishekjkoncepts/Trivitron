@@ -290,6 +290,7 @@ const Bannervideo = () => {
                     height: "9px",
                     width: "9px",
                     cursor: "pointer",
+                    marginLeft:"-5px"
                   }}
                   alt="The house from the offer."
                   src={rightwhitearrow}

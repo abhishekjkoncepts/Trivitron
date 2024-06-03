@@ -28,7 +28,7 @@ const Podcasts = () => {
             >
               <Box
                 sx={{
-                  marginTop: "50px",
+                  marginTop: "80px",
                   marginBottom: "50px",
                   marginLeft: "30px",
                   width: "700px",
@@ -105,6 +105,7 @@ const Podcasts = () => {
                       lineHeight: "24px",
                       letterSpacing: "2%",
                       color: "#0BAEB2",
+                      cursor:"pointer"
                     }}
                   >
                     VIEW MORE PODCASTS
@@ -118,6 +119,7 @@ const Podcasts = () => {
                     display: "flex",
                     flexDirection: "row",
                     justifyContent: "space-between",
+                    marginTop:"30px"
                   }}
                 >
                   {/* 1 */}

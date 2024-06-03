@@ -18,7 +18,7 @@ const Webinar = () => {
             sm={12}
             md={12}
             lg={12}
-            sx={{ backgroundColor: "#D0ECED", height: "293px" }}
+            sx={{ backgroundColor: "#D0ECED", height: "300px" }}
           >
             <Box>
               <Box sx={{ marginTop: "30px" }}>
@@ -422,7 +422,7 @@ const Webinar = () => {
             sm={12}
             md={12}
             lg={12}
-            sx={{ backgroundColor: "#fff", height: "330px" }}
+            sx={{ backgroundColor: "#fff", height: "370px" }}
           ></Grid>
         </Grid>
       </Box>

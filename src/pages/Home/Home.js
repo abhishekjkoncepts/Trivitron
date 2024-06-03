@@ -25,7 +25,7 @@ const Home = () => {
       <Specialties />
 
       {/* Eksahishuruaat */}
-      {/* <Eksahishuruaat /> */}
+      <Eksahishuruaat />
 
       {/* Products */}
       <Products />

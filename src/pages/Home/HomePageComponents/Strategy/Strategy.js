@@ -35,13 +35,13 @@ const Strategy = () => {
                 display: "flex",
                 flexDirection: "row",
                 justifyContent: "center",
-                alignItems:"center"
-
+                alignItems: "center",
               }}
             >
               <Box
                 sx={{
                   // backgroundColor: "orange",
+                  marginTop:"-40px",
                   position: "absolute",
                   width: "90%",
                   height: "390px",
@@ -50,6 +50,21 @@ const Strategy = () => {
                   justifyContent: "space-between",
                 }}
               >
+               <Box sx={{display:"flex" , flexDirection:"column"}}>
+                <Typography
+                  sx={{
+                    fontSize: "22px",
+                    fontWeight: "300",
+                    lineHeight: "33px",
+                    letterSpacing: "8%",
+                    textAlign: "left",
+                    fontFamily: "Poppins, sans-serif",
+                    color: "#0BAEB2",
+                  }}
+                >
+                  OUR STRATEGY
+                </Typography>
+              
                 <Box
                   sx={{
                     display: "flex",
@@ -247,6 +262,7 @@ const Strategy = () => {
                     </Box>
                   </Box>
                 </Box>
+                </Box>
                 {/* -------------------------------- */}
                 <Box
                   sx={{
@@ -358,7 +374,7 @@ const Strategy = () => {
                           letterSpacing: "4%",
                         }}
                       >
-                        Know more
+                        Discover more
                       </Typography>
                       <Box
                         sx={{
@@ -375,6 +391,7 @@ const Strategy = () => {
                           height: "9px",
                           width: "9px",
                           cursor: "pointer",
+                          marginLeft:"-5px"
                         }}
                         alt="The house from the offer."
                         src={whiteArrow}

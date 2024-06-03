@@ -16,7 +16,7 @@ const Docuseries = () => {
           <Box
             sx={{
               width: { xs: "100%", sm: "100%", md: "100%", lg: "100%" },
-              height: { xs: "50vh", sm: "50vh", md: "120vh", lg: "120vh" },
+              height: { xs: "50vh", sm: "50vh", md: "120vh", lg: "90vh" },
               marginTop: "-26px",
             }}
           >
@@ -27,7 +27,7 @@ const Docuseries = () => {
               muted
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
-            <Grid container sx={{ marginTop: "-500px" }}>
+            <Grid container sx={{ marginTop: "-400px" }}>
               <Grid
                 item
                 xs={12}
@@ -150,6 +150,7 @@ const Docuseries = () => {
                         height: "9px",
                         width: "9px",
                         cursor: "pointer",
+                        marginLeft:"-5px"
                       }}
                       alt="The house from the offer."
                       src={rightwhitearrow}

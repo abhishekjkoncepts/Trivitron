@@ -5,9 +5,10 @@ import { Box } from "@mui/material";
 
 // PAGES
 import Navigation from "./navigation/Navigation";
-import Products from "./pages/Home/HomePageComponents/Products/Products";
-import Eksahishuruaat from "./pages/Home/HomePageComponents/Eksahishuruaat/Eksahishuruaat";
+import Specialties from "./pages/Home/HomePageComponents/Specialties/Specialties";
 import Ourrelationship from "./pages/Home/HomePageComponents/Ourrelationship/Ourrelationship";
+import Products from "./pages/Home/HomePageComponents/Products/Products";
+import Strategy from "./pages/Home/HomePageComponents/Strategy/Strategy";
 
 const App = () => {
   return (
@@ -15,6 +16,9 @@ const App = () => {
       <Navigation />
       {/* <Eksahishuruaat/> */}
       {/* <Ourrelationship/> */}
+      {/* <Products/> */}
+      {/* <Specialties/> */}
+      {/* <Strategy/> */}
     </Box>
   );
 };

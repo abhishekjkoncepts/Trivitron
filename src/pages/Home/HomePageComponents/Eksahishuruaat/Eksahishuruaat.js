@@ -929,6 +929,7 @@ const Eksahishuruaat = () => {
                   height: "9px",
                   width: "9px",
                   cursor: "pointer",
+                  marginLeft:"-5px"
                 }}
                 alt="The house from the offer."
                 src={whiteArrow}
@@ -1294,6 +1295,7 @@ const Eksahishuruaat = () => {
             height: "9px",
             width: "9px",
             cursor: "pointer",
+            marginLeft:"-5px"
           }}
           alt="The house from the offer."
           src={whiteArrow}

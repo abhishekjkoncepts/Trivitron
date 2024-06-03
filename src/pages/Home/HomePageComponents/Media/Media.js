@@ -1,4 +1,4 @@
-import React from "react";
+import React ,  {useRef} from "react";
 import { Grid, Box, Typography } from "@mui/material";
 
 import "./Media.css";
@@ -14,6 +14,9 @@ import leftarrow from "../../../../assets/images/Media/White-left-arrow.png"
 import rightarrow from "../../../../assets/images/Media/White-right-arrow.png"
 
 const Media = () => {
+
+  const sliderRef = useRef(null);
+
   var settings = {
     infinite: true,
     speed: 500,
@@ -51,7 +54,7 @@ const Media = () => {
   };
   return (
     <>
-      <Grid container sx={{ marginTop:"50px" , marginBottom:"50px"}}>
+      <Grid container sx={{marginTop:"80px" , marginBottom:"80px"}}>
         <Grid
           item
           xs={12}
@@ -60,7 +63,7 @@ const Media = () => {
           lg={2.5}
           sx={{ backgroundColor: "#6B6666" ,}}
         >
-          <Box sx={{ height: "320px" }}>
+          <Box sx={{ height: "320px" , }}>
             <Box sx={{ marginTop: "80px" }}>
               <Typography
                 sx={{
@@ -110,11 +113,13 @@ const Media = () => {
                   component="img"
                   src={leftarrow}
                   sx={{width:"20px", height:"20px"}}
+                  onClick={() => sliderRef.current.slickPrev()}
                 />
                 <Box
                   component="img"
                   src={rightarrow}
                   sx={{width:"20px", height:"20px"}}
+                  onClick={() => sliderRef.current.slickNext()}
                 />
               </Box>
               </Box>
@@ -132,7 +137,7 @@ const Media = () => {
           // sx={{ backgroundColor: "green" }}
         >
           <Box sx={{ margin: "10px" }}>
-            <Slider {...settings}>
+            <Slider ref={sliderRef}  {...settings}>
               {mediaSlider.map((item) => (
                 <Box
                   sx={{
