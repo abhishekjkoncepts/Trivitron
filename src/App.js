@@ -7,12 +7,14 @@ import { Box } from "@mui/material";
 import Navigation from "./navigation/Navigation";
 import Products from "./pages/Home/HomePageComponents/Products/Products";
 import Eksahishuruaat from "./pages/Home/HomePageComponents/Eksahishuruaat/Eksahishuruaat";
+import Ourrelationship from "./pages/Home/HomePageComponents/Ourrelationship/Ourrelationship";
 
 const App = () => {
   return (
     <Box>
       {/* <Navigation /> */}
-      <Eksahishuruaat/>
+      {/* <Eksahishuruaat/> */}
+      <Ourrelationship/>
     </Box>
   );
 };
