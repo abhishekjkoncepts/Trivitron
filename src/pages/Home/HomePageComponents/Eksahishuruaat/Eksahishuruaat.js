@@ -580,20 +580,27 @@ const Eksahishuruaat = () => {
   return (
     <>
       <Grid container sx={{ backgroundColor: "white" }}>
-        <Grid item xs={12} sm={12} md={2} lg={2}>
-          <Box sx={{ border: "2px solid #0BAEB2" }}>
+        <Grid
+          item
+          xs={12}
+          sm={12}
+          md={2}
+          lg={2}
+          sx={{
+            border: "2px solid #0BAEB2",
+          }}
+        >
+          <Box>
             {/* 1 */}
             <Box
               sx={{
                 borderBottom: "2px solid #0BAEB2",
-                width: "100%",
-                // height: "50%",
               }}
             >
               <Box
                 sx={{
                   marginTop: "15%",
-                  marginBottom: "10%",
+                  marginBottom: "8%",
                 }}
               >
                 <Box>
@@ -676,11 +683,10 @@ const Eksahishuruaat = () => {
               sx={{
                 width: "100%",
                 marginTop: "20%",
-                marginBottom: "28%",
+                // marginBottom: "20%",
               }}
             >
-              <Box sx={{}}>
-                <Box sx={{}}>
+                <Box>
                   <Typography
                     sx={{
                       fontFamily: "Poppins, sans-serif",
@@ -741,7 +747,6 @@ const Eksahishuruaat = () => {
                 </Box>
               </Box>
             </Box>
-          </Box>
         </Grid>
         <Grid item xs={12} sm={12} md={10} lg={10}>
           <Box
