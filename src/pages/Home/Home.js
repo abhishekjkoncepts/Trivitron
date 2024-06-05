@@ -14,6 +14,7 @@ import Media from "./HomePageComponents/Media/Media";
 import Podcasts from "./HomePageComponents/Podcasts/Podcasts";
 import Strategy from "./HomePageComponents/Strategy/Strategy";
 import Eksahishuruaat from "./HomePageComponents/Eksahishuruaat/Eksahishuruaat";
+import ScrollToTopButton from "../Topbutton/ScrollToTopButton ";
 
 const Home = () => {
   return (
@@ -21,6 +22,8 @@ const Home = () => {
       {/* BannerVideo */}
       <Bannervideo />
 
+      <ScrollToTopButton />
+      
       {/* Specialties */}
       <Specialties />
 

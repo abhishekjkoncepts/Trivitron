@@ -156,7 +156,7 @@
 
 // export default Bannervideo;
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // MUI
 import { Grid, Box, Typography } from "@mui/material";
@@ -174,6 +174,12 @@ import rightArrow from "../../../../assets/images/right-arrow.png";
 import "./Bannervideo.css";
 
 const Bannervideo = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   const BannerVideoSlide = [
     <Grid item xs={12} sm={12} md={12} lg={12}>
       <Box
@@ -290,7 +296,7 @@ const Bannervideo = () => {
                     height: "9px",
                     width: "9px",
                     cursor: "pointer",
-                    marginLeft:"-5px"
+                    marginLeft: "-5px",
                   }}
                   alt="The house from the offer."
                   src={rightwhitearrow}
@@ -777,6 +783,7 @@ const Bannervideo = () => {
           </Box>
         </Grid>
       </Grid>
+      
     </>
   );
 };
