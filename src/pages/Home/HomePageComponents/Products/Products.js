@@ -1,4 +1,4 @@
-import React , {useRef} from "react";
+import React, { useRef } from "react";
 import "./Products.css";
 import { Grid, Box, Typography } from "@mui/material";
 
@@ -12,6 +12,8 @@ import rightArrow from "../../../../assets/images/right-arrow.png";
 
 // json
 import { productSlider } from "../../../../assets/json/ProductsSlider/ProductsSlider";
+
+import { Fade, Bounce } from "react-awesome-reveal";
 
 // images
 
@@ -50,16 +52,16 @@ import { productSlider } from "../../../../assets/json/ProductsSlider/ProductsSl
 // }
 
 const Products = () => {
-  
   const sliderRef = useRef(null);
   var settings = {
     // dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 5,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
+    focusOnSelect: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -112,18 +114,20 @@ const Products = () => {
             // sx={{ backgroundColor: "blue" }}
           >
             <Box>
-              <Typography
-                sx={{
-                  fontSize: "22px",
-                  lineHeight: "33px",
-                  letterSpacing: "8%",
-                  fontWeight: "300",
-                  fontFamily: "Poppins, sans-serif",
-                  color: "#0BAEB2",
-                }}
-              >
-                PRODUCTS BY TRIVITRON
-              </Typography>
+              <Fade direction="left">
+                <Typography
+                  sx={{
+                    fontSize: "22px",
+                    lineHeight: "33px",
+                    letterSpacing: "8%",
+                    fontWeight: "300",
+                    fontFamily: "Poppins, sans-serif",
+                    color: "#0BAEB2",
+                  }}
+                >
+                  PRODUCTS BY TRIVITRON
+                </Typography>
+              </Fade>
             </Box>
           </Grid>
           <Grid
@@ -158,23 +162,24 @@ const Products = () => {
             // sx={{ backgroundColor: "blue" }}
           >
             <Box>
-
-              <Typography
-                sx={{
-                  fontFamily: "Poppins, sans-serif",
-                  fontWeight: "300",
-                  fontSize: "13px",
-                  lineHeight: "19.5px",
-                  letterSpacing: "4%",
-                  color: "#1B1817",
-                }}
-              >
-                Trivitron bridges global medical technology gaps, offering vital
-                solutions to healthcare providers worldwide. Leveraging diverse
-                intellect,
-                <br /> our range of products drives healthcare advancements
-                across all societal strata and geographies.
-              </Typography>
+              <Fade direction="left">
+                <Typography
+                  sx={{
+                    fontFamily: "Poppins, sans-serif",
+                    fontWeight: "300",
+                    fontSize: "13px",
+                    lineHeight: "19.5px",
+                    letterSpacing: "4%",
+                    color: "#1B1817",
+                  }}
+                >
+                  Trivitron bridges global medical technology gaps, offering
+                  vital solutions to healthcare providers worldwide. Leveraging
+                  diverse intellect,
+                  <br /> our range of products drives healthcare advancements
+                  across all societal strata and geographies.
+                </Typography>
+              </Fade>
             </Box>
           </Grid>
 
@@ -202,46 +207,48 @@ const Products = () => {
                   justifyContent: "space-between",
                 }}
               >
-                {/* left arrow */}
-                <Box
-                  sx={{
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                 
-                >
+                <Fade direction="left">
+                  {/* left arrow */}
                   <Box
                     sx={{
-                      width: "32px",
-                      height: "32px",
-                      border: "1px solid #0BAEB2",
-                      borderRadius: "100px",
+                      display: "flex",
+                      flexDirection: "row",
+                      justifyContent: "center",
+                      alignItems: "center",
                     }}
-                    onClick={() => sliderRef.current.slickPrev()}
-                  ></Box>
-                  <Box
-                    src={leftArrow}
-                    component="img"
-                    sx={{
-                      width: "6px",
-                      height: "9px",
-                      marginLeft: "-20px",
-                    }}
-                    onClick={() => sliderRef.current.slickPrev()}
-                  />
-                  <Box
-                    sx={{
-                      height: "1px",
-                      width: "34px",
-                      backgroundColor: "#0BAEB2",
-                      marginLeft: "-5px",
-                    }}
-                    onClick={() => sliderRef.current.slickPrev()}
-                  ></Box>
-                </Box>
+                  >
+                    <Box
+                      sx={{
+                        width: "32px",
+                        height: "32px",
+                        border: "1px solid #0BAEB2",
+                        borderRadius: "100px",
+                      }}
+                      onClick={() => sliderRef.current.slickPrev()}
+                    ></Box>
+                    <Box
+                      src={leftArrow}
+                      component="img"
+                      sx={{
+                        width: "6px",
+                        height: "9px",
+                        marginLeft: "-20px",
+                      }}
+                      onClick={() => sliderRef.current.slickPrev()}
+                    />
+                    <Box
+                      sx={{
+                        height: "1px",
+                        width: "34px",
+                        backgroundColor: "#0BAEB2",
+                        marginLeft: "-5px",
+                      }}
+                      onClick={() => sliderRef.current.slickPrev()}
+                    ></Box>
+                  </Box>
+                </Fade>
 
+                {/* <Fade direction="right"> */}
                 {/* right arrow */}
                 <Box
                   sx={{
@@ -280,6 +287,7 @@ const Products = () => {
                     onClick={() => sliderRef.current.slickNext()}
                   ></Box>
                 </Box>
+                {/* </Fade> */}
               </Box>
             </Box>
           </Grid>
@@ -288,7 +296,7 @@ const Products = () => {
             item
             xs={12}
             sm={12}
-            md={1}  
+            md={1}
             lg={1}
             sx={{ backgroundColor: "#F9FAFA" }}
             // sx={{ backgroundColor: "green" }}
@@ -305,50 +313,52 @@ const Products = () => {
             lg={12}
             // sx={{backgroundColor:"green"}}
           >
-            <Box
-              sx={{
-                margin: "0px",
-              }}
-            >
-              <Slider ref={sliderRef} {...settings}>
-                {productSlider.map((item) => (
-                  <Box
-                    sx={{
-                      display: "flex",
-                      // flexDirection: "row",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      marginTop: "25px",
-                      marginLeft: "10px",
-                    }}
-                  >
+            <Bounce direction="bottom-left">
+              <Box
+                sx={{
+                  margin: "0px",
+                }}
+              >
+                <Slider ref={sliderRef} {...settings}>
+                  {productSlider.map((item) => (
                     <Box
-                      component="img"
                       sx={{
-                        height: "239px",
-                        width: "230px",
-                        marginRight: "5px",
+                        display: "flex",
+                        // flexDirection: "row",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        marginTop: "25px",
+                        marginLeft: "10px",
                       }}
-                      alt="The house from the offer."
-                      src={item.image}
-                    />
-                    <Box sx={{ marginTop: "10px" }}>
-                      <Typography
+                    >
+                      <Box
+                        component="img"
                         sx={{
-                          fontSize: "12px",
-                          fontWeight: "700",
-                          lineHeight: "18px",
-                          color: "#0BAEB2",
-                          textAlign: "center",
+                          height: "239px",
+                          width: "230px",
+                          marginRight: "5px",
                         }}
-                      >
-                        {item.name}
-                      </Typography>
+                        alt="The house from the offer."
+                        src={item.image}
+                      />
+                      <Box sx={{ marginTop: "10px" }}>
+                        <Typography
+                          sx={{
+                            fontSize: "12px",
+                            fontWeight: "700",
+                            lineHeight: "18px",
+                            color: "#0BAEB2",
+                            textAlign: "center",
+                          }}
+                        >
+                          {item.name}
+                        </Typography>
+                      </Box>
                     </Box>
-                  </Box>
-                ))}
-              </Slider>
-            </Box>
+                  ))}
+                </Slider>
+              </Box>
+            </Bounce>
           </Grid>
           {/* <Grid item xs={12} sm={12} md={0.1} lg={0.1} sx={{backgroundColor:"red"}}></Grid> */}
         </Grid>

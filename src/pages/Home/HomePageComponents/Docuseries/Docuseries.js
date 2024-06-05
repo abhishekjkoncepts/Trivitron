@@ -8,6 +8,8 @@ import Docuseriesr from "../../../../assets/videos/black.mp4";
 
 import rightwhitearrow from "../../../../assets/images/right-arrow-white.png";
 
+import { Fade, Bounce } from "react-awesome-reveal";
+
 const Docuseries = () => {
   return (
     <>
@@ -51,17 +53,20 @@ const Docuseries = () => {
               >
                 <Box>
                   <Box>
-                    <Typography
-                      sx={{
-                        color: "#FFFFFF",
-                        fontSize: "16px",
-                        fontWeight: "300",
-                        fontFamily: "Poppins, sans-serif",
-                        letterSpacing: "4%",
-                      }}
-                    ></Typography>
+                    <Fade direction="left">
+                      <Typography
+                        sx={{
+                          color: "#FFFFFF",
+                          fontSize: "16px",
+                          fontWeight: "300",
+                          fontFamily: "Poppins, sans-serif",
+                          letterSpacing: "4%",
+                        }}
+                      ></Typography>
+                    </Fade>
                   </Box>
                   <Box sx={{ marginTop: "5px" }}>
+                  <Fade direction="left">
                     <Typography
                       sx={{
                         color: "#0BAEB2",
@@ -75,10 +80,11 @@ const Docuseries = () => {
                     >
                       DOCUSERIES
                     </Typography>
-                    {/* <Typography>INNOVATION CENTER</Typography> */}
+                    </Fade>
                   </Box>
 
                   <Box sx={{ marginTop: "5px" }}>
+                  <Fade direction="right">
                     <Typography
                       sx={{
                         color: "#FFFFFF",
@@ -92,10 +98,12 @@ const Docuseries = () => {
                     >
                       ON THE FRONTLINES
                     </Typography>
+                    </Fade>
                     {/* <Typography>INNOVATION CENTER</Typography> */}
                   </Box>
 
                   <Box sx={{ marginTop: "15px" }}>
+                  <Fade direction="left">
                     <Typography
                       sx={{
                         color: "#FFFFFF",
@@ -113,7 +121,9 @@ const Docuseries = () => {
                       on the latest healthcare news and stories worldwide, from{" "}
                       <br /> the ICUs of Europe to the clinics of India.
                     </Typography>
+                    </Fade>
                   </Box>
+                  <Fade direction="up">
                   <Box
                     sx={{
                       marginTop: "40px",
@@ -150,7 +160,7 @@ const Docuseries = () => {
                         height: "9px",
                         width: "9px",
                         cursor: "pointer",
-                        marginLeft:"-5px"
+                        marginLeft: "-5px",
                       }}
                       alt="The house from the offer."
                       src={rightwhitearrow}
@@ -165,6 +175,7 @@ const Docuseries = () => {
                       }}
                     ></Box>
                   </Box>
+                  </Fade>
                 </Box>
               </Grid>
               <Grid item xs={12} sm={12} md={1} lg={1}></Grid>

@@ -171,15 +171,11 @@ import rightwhitearrow from "../../../../assets/images/right-arrow-white.png";
 import leftArrow from "../../../../assets/images/left-arrow.png";
 import rightArrow from "../../../../assets/images/right-arrow.png";
 
+import { Fade , Slide } from "react-awesome-reveal";
+
 import "./Bannervideo.css";
 
 const Bannervideo = () => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
   const BannerVideoSlide = [
     <Grid item xs={12} sm={12} md={12} lg={12}>
       <Box
@@ -213,6 +209,7 @@ const Bannervideo = () => {
             lg={10}
             // sx={{ backgroundColor: "pink" }}
           >
+          <Fade direction="left">
             <Box>
               <Box>
                 <Typography
@@ -312,6 +309,7 @@ const Bannervideo = () => {
                 ></Box>
               </Box>
             </Box>
+            </Fade>
           </Grid>
           <Grid item xs={12} sm={12} md={1} lg={1}></Grid>
         </Grid>
@@ -350,104 +348,108 @@ const Bannervideo = () => {
             lg={10}
             // sx={{ backgroundColor: "pink" }}
           >
-            <Box>
               <Box>
-                <Typography
-                  sx={{
-                    color: "#FFFFFF",
-                    fontSize: "16px",
-                    fontWeight: "300",
-                    fontFamily: "Poppins, sans-serif",
-                    letterSpacing: "4%",
-                  }}
-                >
-                  HEALTHCARE TECHNOLOGY
-                </Typography>
-              </Box>
-              <Box sx={{ marginTop: "5px" }}>
-                <Typography
-                  sx={{
-                    color: "white",
-                    fontSize: "30px",
-                    fontWeight: "275",
-                    fontFamily: "Poppins, sans-serif",
-                    lineHeight: "40px",
-                    color: "#0BAEB2",
-                    letterSpacing: "4%",
-                  }}
-                >
-                  TRIVITRON TECHNOLOGIES & <br />
-                  INNOVATION CENTER
-                </Typography>
-                {/* <Typography>INNOVATION CENTER</Typography> */}
-              </Box>
-              <Box sx={{ marginTop: "15px" }}>
-                <Typography
-                  sx={{
-                    color: "#FFFFFF",
-                    fontSize: "15px",
-                    fontWeight: "300",
-                    fontFamily: "Poppins, sans-serif",
-                    lineHeight: "24px",
-                    letterSpacing: "4%",
-                  }}
-                >
-                  symbolizing Trivitron's commitment to <br />
-                  R&D and innovation in healthcare.
-                  <br />
-                  It serves as a technology hub to deliver on our mission.
-                </Typography>
-              </Box>
-              <Box
-                sx={{
-                  marginTop: "40px",
-                  display: "flex",
-                  flexDirection: "row",
-                  // justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <Typography
-                  sx={{
-                    color: "#FFFFFF",
-                    fontSize: "13px",
-                    fontWeight: "600",
-                    fontFamily: "Poppins, sans-serif",
-                    lineHeight: "19.5px",
-                    letterSpacing: "4%",
-                  }}
-                >
-                  Discover more
-                </Typography>
+                <Box>
+            <Fade direction="left">
+                  <Typography
+                    sx={{
+                      color: "#FFFFFF",
+                      fontSize: "16px",
+                      fontWeight: "300",
+                      fontFamily: "Poppins, sans-serif",
+                      letterSpacing: "4%",
+                    }}
+                  >
+                    HEALTHCARE TECHNOLOGY
+                  </Typography>
+                </Fade>
+                </Box>
+
+                <Box sx={{ marginTop: "5px" }}>
+                  <Typography
+                    sx={{
+                      color: "white",
+                      fontSize: "30px",
+                      fontWeight: "275",
+                      fontFamily: "Poppins, sans-serif",
+                      lineHeight: "40px",
+                      color: "#0BAEB2",
+                      letterSpacing: "4%",
+                    }}
+                  >
+                    TRIVITRON TECHNOLOGIES & <br />
+                    INNOVATION CENTER
+                  </Typography>
+                  {/* <Typography>INNOVATION CENTER</Typography> */}
+                </Box>
+                <Box sx={{ marginTop: "15px" }}>
+                  <Typography
+                    sx={{
+                      color: "#FFFFFF",
+                      fontSize: "15px",
+                      fontWeight: "300",
+                      fontFamily: "Poppins, sans-serif",
+                      lineHeight: "24px",
+                      letterSpacing: "4%",
+                    }}
+                  >
+                    symbolizing Trivitron's commitment to <br />
+                    R&D and innovation in healthcare.
+                    <br />
+                    It serves as a technology hub to deliver on our mission.
+                  </Typography>
+                </Box>
                 <Box
                   sx={{
-                    height: "1px",
-                    width: "170px",
-                    backgroundColor: "#FFFFFF",
-                    marginLeft: "15px",
+                    marginTop: "40px",
+                    display: "flex",
+                    flexDirection: "row",
+                    // justifyContent: "center",
+                    alignItems: "center",
                   }}
-                ></Box>
-                <Box
-                  component="img"
-                  sx={{
-                    height: "9px",
-                    width: "9px",
-                    cursor: "pointer",
-                  }}
-                  alt="The house from the offer."
-                  src={rightwhitearrow}
-                />
-                <Box
-                  sx={{
-                    height: "46px",
-                    width: "46px",
-                    border: "1px solid white",
-                    borderRadius: "100px",
-                    marginLeft: "-25px",
-                  }}
-                ></Box>
+                >
+                  <Typography
+                    sx={{
+                      color: "#FFFFFF",
+                      fontSize: "13px",
+                      fontWeight: "600",
+                      fontFamily: "Poppins, sans-serif",
+                      lineHeight: "19.5px",
+                      letterSpacing: "4%",
+                    }}
+                  >
+                    Discover more
+                  </Typography>
+                  <Box
+                    sx={{
+                      height: "1px",
+                      width: "170px",
+                      backgroundColor: "#FFFFFF",
+                      marginLeft: "15px",
+                    }}
+                  ></Box>
+                  <Box
+                    component="img"
+                    sx={{
+                      height: "9px",
+                      width: "9px",
+                      cursor: "pointer",
+                    }}
+                    alt="The house from the offer."
+                    src={rightwhitearrow}
+                  />
+                  <Box
+                    sx={{
+                      height: "46px",
+                      width: "46px",
+                      border: "1px solid white",
+                      borderRadius: "100px",
+                      marginLeft: "-25px",
+                    }}
+                  ></Box>
+                </Box>
               </Box>
-            </Box>
+            
           </Grid>
           <Grid item xs={12} sm={12} md={1} lg={1}></Grid>
         </Grid>
@@ -783,7 +785,6 @@ const Bannervideo = () => {
           </Box>
         </Grid>
       </Grid>
-      
     </>
   );
 };

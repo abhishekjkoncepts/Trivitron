@@ -9,6 +9,7 @@ import Specialties from "./pages/Home/HomePageComponents/Specialties/Specialties
 import Ourrelationship from "./pages/Home/HomePageComponents/Ourrelationship/Ourrelationship";
 import Products from "./pages/Home/HomePageComponents/Products/Products";
 import Strategy from "./pages/Home/HomePageComponents/Strategy/Strategy";
+import Sample from "./pages/Home/HomePageComponents/Sample";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       {/* <Products/> */}
       {/* <Specialties/> */}
       {/* <Strategy/> */}
+      {/* <Sample/> */}
     </Box>
   );
 };

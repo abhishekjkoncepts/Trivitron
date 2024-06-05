@@ -7,6 +7,8 @@ import "./Webinar.css";
 
 import medicalSampleImge from "../../../../assets/images/Webinar/medicalSampleImg.jpg";
 
+import { Fade  } from "react-awesome-reveal";
+
 const Webinar = () => {
   return (
     <>
@@ -22,6 +24,7 @@ const Webinar = () => {
           >
             <Box>
               <Box sx={{ marginTop: "30px" }}>
+              <Fade direction="down">
                 <Typography
                   sx={{
                     textAlign: "center",
@@ -34,8 +37,10 @@ const Webinar = () => {
                 >
                   WEBINAR
                 </Typography>
+                </Fade>
               </Box>
               <Box sx={{ marginTop: "10px" }}>
+              <Fade direction="up">
                 <Typography
                   sx={{
                     textAlign: "center",
@@ -49,6 +54,7 @@ const Webinar = () => {
                   Discover more stories and podcasts from real patients in the
                   trivitron world .
                 </Typography>
+                </Fade>
               </Box>
             </Box>
           </Grid>
@@ -65,6 +71,7 @@ const Webinar = () => {
               }}
             >
               {/* image 1 */}
+              <Fade direction="left">
               <Box>
                 <Box
                   component="img"
@@ -180,8 +187,10 @@ const Webinar = () => {
                   </Typography>
                 </Box>
               </Box>
+              </Fade>
 
               {/* image 2 */}
+            <Fade direction="down">
               <Box>
                 <Box
                   component="img"
@@ -297,7 +306,9 @@ const Webinar = () => {
                   </Typography>
                 </Box>
               </Box>
+              </Fade>
               {/* image 3 */}
+              <Fade direction="right">
               <Box>
                 <Box
                   component="img"
@@ -411,6 +422,7 @@ const Webinar = () => {
                   </Typography>
                 </Box>
               </Box>
+              </Fade>
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={1} lg={1}></Grid>

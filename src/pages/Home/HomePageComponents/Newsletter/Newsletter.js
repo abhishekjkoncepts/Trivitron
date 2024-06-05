@@ -6,6 +6,8 @@ import "./Newsletter.css";
 
 import rightarrow from "../../../../assets/images/right-arrow.png"
 
+import { Fade } from "react-awesome-reveal";
+
 const Newsletter = () => {
   return (
     <>
@@ -21,6 +23,7 @@ const Newsletter = () => {
         >
           <Box sx={{ marginTop: "50px", marginBottom: "50px" }}>
             <Box>
+          <Fade direction="down">
               <Typography
                 sx={{
                   fontSize: "22px",
@@ -32,9 +35,11 @@ const Newsletter = () => {
               >
                 SUBSCRIBE TO OUR NEWSLETTER
               </Typography>
+              </Fade>
             </Box>
 
             <Box sx={{ marginTop: "40px" }}>
+            <Fade direction="down">
               <Typography
                 sx={{
                   fontSize: "16px",
@@ -46,9 +51,11 @@ const Newsletter = () => {
               >
                 About Trivitron
               </Typography>
+              </Fade>
             </Box>
 
             <Box sx={{ marginTop: "20px" }}>
+            <Fade direction="down">
               <Typography
                 sx={{
                   fontSize: "16px",
@@ -65,6 +72,7 @@ const Newsletter = () => {
                 hospitals, individual healthcare providers, and independent
                 practitioners alike.
               </Typography>
+              </Fade>
             </Box>
 
             <Box
@@ -76,6 +84,7 @@ const Newsletter = () => {
                 alignItems:"center"
               }}
             >
+            <Fade direction="left">
               <input
                 type="text"
                 placeholder="Enter your email address"
@@ -94,6 +103,7 @@ const Newsletter = () => {
 
                 }}
               />
+            
               <Box sx={{alignItems:"center" , display:"flex" , flexDirection:"row" , }}>
                 <Box sx={{height:"1px" , width:"100px" , backgroundColor:"#0BAEB2" , marginLeft:"-50px"}}></Box>
                 <Box
@@ -108,6 +118,7 @@ const Newsletter = () => {
                     src={rightarrow}
                   />
               </Box>
+              </Fade>
 
 
             </Box>

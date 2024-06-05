@@ -323,9 +323,12 @@ import { Grid, Box, Typography } from "@mui/material";
 import sample1 from "../../../../assets/images/RelationShip/sample1.0.png";
 import sample2 from "../../../../assets/images/RelationShip/sample1.1.png";
 import sample3 from "../../../../assets/images/RelationShip/Sample1.2.png";
+// import reltionship from "../../../../assets/images/RelationShip/dr.png";
 import reltionship from "../../../../assets/images/RelationShip/RelationshipImage.png";
 import leftArrow from "../../../../assets/images/left-arrow.png";
 import rightArrow from "../../../../assets/images/right-arrow.png";
+
+import { Fade, Bounce } from "react-awesome-reveal";
 
 const Ourrelationship = () => {
   // images
@@ -353,87 +356,94 @@ const Ourrelationship = () => {
             marginBottom: "65px",
           }}
         >
-          <Typography
-            sx={{
-              fontSize: "13px",
-              fontWeight: "700",
-              fontFamily: "Poppins, sans-serif",
-              color: "#0BAEB2",
-              letterSpacing: "4%",
-              lineHeight: "19.5px",
-              textAlign: "left",
-            }}
-          >
-            01
-          </Typography>
+          <Fade direction="left">
+            <Typography
+              sx={{
+                fontSize: "13px",
+                fontWeight: "700",
+                fontFamily: "Poppins, sans-serif",
+                color: "#0BAEB2",
+                letterSpacing: "4%",
+                lineHeight: "19.5px",
+                textAlign: "left",
+              }}
+            >
+              01
+            </Typography>
+          </Fade>
 
-          <Typography
-            sx={{
-              fontFamily: "Poppins, sans-serif",
-              fontWeight: "300",
-              fontSize: "22px",
-              lineHeight: "33px",
-              letterSpacing: "8%",
-              color: "#0BAEB2",
-              textAlign: "left",
-            }}
-          >
-            OUR RELATIONSHIP
-          </Typography>
-          <Typography
-            sx={{
-              fontFamily: "Poppins, sans-serif",
-              fontWeight: "300",
-              fontSize: "24px",
-              lineHeight: "36px",
-              letterSpacing: "8%",
-              color: "#6B6666",
-              marginTop: "20px",
-              // marginBottom: "60px",
-            }}
-          >
-            An inclusive culture is a pre-requisite if we aspire to serve{" "}
-            <span
-              style={{
-                fontSize: "24px",
-                fontWeight: "700",
-                lineHeight: "36px",
+          <Fade direction="right">
+            <Typography
+              sx={{
                 fontFamily: "Poppins, sans-serif",
+                fontWeight: "300",
+                fontSize: "22px",
+                lineHeight: "33px",
+                letterSpacing: "8%",
                 color: "#0BAEB2",
+                textAlign: "left",
               }}
             >
-              the eight billion people
-            </span>{" "}
-            on our planet. <br />
-            As a diverse organization, we can better relate to the people –
-            whether customers or patients <br />– their communities and the
-            specific <br />
-            challenges they face.
-            <span
-              style={{
-                fontSize: "24px",
-                fontWeight: "700",
-                lineHeight: "36px",
+              OUR RELATIONSHIP
+            </Typography>
+          </Fade>
+
+          <Fade direction="up">
+            <Typography
+              sx={{
                 fontFamily: "Poppins, sans-serif",
-                color: "#0BAEB2",
+                fontWeight: "300",
+                fontSize: "24px",
+                lineHeight: "36px",
+                letterSpacing: "8%",
+                color: "#6B6666",
+                marginTop: "20px",
+                // marginBottom: "60px",
               }}
             >
-              {"  "}Diversity, equity, and inclusion
-            </span>{" "}
-            are therefore important aspects of <br />
-            our wider{" "}
-            <span
-              style={{
-                fontSize: "24px",
-                fontWeight: "700",
-                lineHeight: "36px",
-                fontFamily: "Poppins, sans-serif",
-                color: "#0BAEB2",
-              }}
-            >
-              responsibilities.
-            </span>
-          </Typography>
+              An inclusive culture is a pre-requisite if we aspire to serve{" "}
+              <span
+                style={{
+                  fontSize: "24px",
+                  fontWeight: "700",
+                  lineHeight: "36px",
+                  fontFamily: "Poppins, sans-serif",
+                  color: "#0BAEB2",
+                }}
+              >
+                the eight billion people
+              </span>{" "}
+              on our planet. <br />
+              As a diverse organization, we can better relate to the people –
+              whether customers or patients <br />– their communities and the
+              specific <br />
+              challenges they face.
+              <span
+                style={{
+                  fontSize: "24px",
+                  fontWeight: "700",
+                  lineHeight: "36px",
+                  fontFamily: "Poppins, sans-serif",
+                  color: "#0BAEB2",
+                }}
+              >
+                {"  "}Diversity, equity, and inclusion
+              </span>{" "}
+              are therefore important aspects of <br />
+              our wider{" "}
+              <span
+                style={{
+                  fontSize: "24px",
+                  fontWeight: "700",
+                  lineHeight: "36px",
+                  fontFamily: "Poppins, sans-serif",
+                  color: "#0BAEB2",
+                }}
+              >
+                responsibilities.
+              </span>
+            </Typography>
+          </Fade>
         </Box>
       </Grid>
 
@@ -444,14 +454,16 @@ const Ourrelationship = () => {
         lg={5.5}
         // sx={{ backgroundColor: "green" }}
       >
-        <Box
-          component="img"
-          sx={{
-            height: "100%",
-            width: "100%",
-          }}
-          src={reltionship}
-        />
+        <Fade direction="right">
+          <Box
+            component="img"
+            sx={{
+              height: "100%",
+              width: "100%",
+            }}
+            src={reltionship}
+          />
+        </Fade>
       </Grid>
     </Grid>,
     // 2
@@ -728,10 +740,7 @@ const Ourrelationship = () => {
       </Grid>
 
       {/* buttons */}
-      <Grid
-        container
-        //  sx={{backgroundColor:"orange"}}
-      >
+      <Grid container>
         <Box
           sx={{
             marginTop: "-40px",
@@ -747,80 +756,84 @@ const Ourrelationship = () => {
           }}
         >
           {/* left arrow */}
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
+          <Fade direction="left">
             <Box
               sx={{
-                width: "32px",
-                height: "32px",
-                border: "1px solid #0BAEB2",
-                borderRadius: "100px",
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
               }}
-              onClick={prevSlide}
-            ></Box>
-            <Box
-              src={leftArrow}
-              component="img"
-              sx={{
-                width: "6px",
-                height: "9px",
-                marginLeft: "-20px",
-              }}
-              onClick={prevSlide}
-            />
-            <Box
-              sx={{
-                height: "1px",
-                width: "34px",
-                backgroundColor: "#0BAEB2",
-                marginLeft: "-5px",
-              }}
-              onClick={prevSlide}
-            ></Box>
-          </Box>
+            >
+              <Box
+                sx={{
+                  width: "32px",
+                  height: "32px",
+                  border: "1px solid #0BAEB2",
+                  borderRadius: "100px",
+                }}
+                onClick={prevSlide}
+              ></Box>
+              <Box
+                src={leftArrow}
+                component="img"
+                sx={{
+                  width: "6px",
+                  height: "9px",
+                  marginLeft: "-20px",
+                }}
+                onClick={prevSlide}
+              />
+              <Box
+                sx={{
+                  height: "1px",
+                  width: "34px",
+                  backgroundColor: "#0BAEB2",
+                  marginLeft: "-5px",
+                }}
+                onClick={prevSlide}
+              ></Box>
+            </Box>
+          </Fade>
 
           {/* right arrow */}
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
+          <Fade direction="right">
             <Box
               sx={{
-                height: "1px",
-                width: "34px",
-                backgroundColor: "#0BAEB2",
-                marginRight: "-5px",
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
               }}
-            ></Box>
-            <Box
-              src={rightArrow}
-              component="img"
-              sx={{
-                width: "6px",
-                height: "9px",
-                marginRight: "-20px",
-              }}
-            />
-            <Box
-              sx={{
-                width: "32px",
-                height: "32px",
-                border: "1px solid #0BAEB2",
-                borderRadius: "100px",
-              }}
-              onClick={nextSlide}
-            ></Box>
-          </Box>
+            >
+              <Box
+                sx={{
+                  height: "1px",
+                  width: "34px",
+                  backgroundColor: "#0BAEB2",
+                  marginRight: "-5px",
+                }}
+              ></Box>
+              <Box
+                src={rightArrow}
+                component="img"
+                sx={{
+                  width: "6px",
+                  height: "9px",
+                  marginRight: "-20px",
+                }}
+              />
+              <Box
+                sx={{
+                  width: "32px",
+                  height: "32px",
+                  border: "1px solid #0BAEB2",
+                  borderRadius: "100px",
+                }}
+                onClick={nextSlide}
+              ></Box>
+            </Box>
+          </Fade>
         </Box>
       </Grid>
     </>

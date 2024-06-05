@@ -6,6 +6,8 @@ import whiteArrow from "../../../../assets/images/right-arrow-white.png";
 
 import "./Strategy.css";
 
+import { Fade, Bounce } from "react-awesome-reveal";
+
 const Strategy = () => {
   return (
     <>
@@ -51,6 +53,7 @@ const Strategy = () => {
                 }}
               >
                <Box sx={{display:"flex" , flexDirection:"column"}}>
+               <Fade direction="up">
                 <Typography
                   sx={{
                     fontSize: "22px",
@@ -64,7 +67,8 @@ const Strategy = () => {
                 >
                   OUR STRATEGY
                 </Typography>
-              
+                </Fade>
+              <Fade direction="left">
                 <Box
                   sx={{
                     display: "flex",
@@ -262,8 +266,10 @@ const Strategy = () => {
                     </Box>
                   </Box>
                 </Box>
+                </Fade>
                 </Box>
                 {/* -------------------------------- */}
+                <Fade direction="right">
                 <Box
                   sx={{
                     display: "flex",
@@ -409,6 +415,7 @@ const Strategy = () => {
                     </Box>
                   </Box>
                 </Box>
+                </Fade>
               </Box>
             </Box>
           </Box>

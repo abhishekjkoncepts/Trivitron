@@ -1,7 +1,8 @@
-import React ,  {useRef} from "react";
+import React, { useRef } from "react";
 import { Grid, Box, Typography } from "@mui/material";
 
 import "./Media.css";
+import { Fade, Bounce } from "react-awesome-reveal";
 
 // react-carousel
 import Slider from "react-slick";
@@ -10,11 +11,10 @@ import "slick-carousel/slick/slick-theme.css";
 
 import { mediaSlider } from "../../../../assets/json/MediaSlider/MediaSlider";
 
-import leftarrow from "../../../../assets/images/Media/White-left-arrow.png"
-import rightarrow from "../../../../assets/images/Media/White-right-arrow.png"
+import leftarrow from "../../../../assets/images/Media/White-left-arrow.png";
+import rightarrow from "../../../../assets/images/Media/White-right-arrow.png";
 
 const Media = () => {
-
   const sliderRef = useRef(null);
 
   var settings = {
@@ -54,74 +54,97 @@ const Media = () => {
   };
   return (
     <>
-      <Grid container sx={{marginTop:"80px" , marginBottom:"80px"}}>
+      <Grid container sx={{ marginTop: "80px", marginBottom: "80px" }}>
         <Grid
           item
           xs={12}
           sm={12}
           md={2.5}
           lg={2.5}
-          sx={{ backgroundColor: "#6B6666" ,}}
+          sx={{ backgroundColor: "#6B6666" }}
         >
-          <Box sx={{ height: "320px" , }}>
+          <Box sx={{ height: "320px" }}>
             <Box sx={{ marginTop: "80px" }}>
-              <Typography
+              <Fade direction="up">
+                <Typography
+                  sx={{
+                    fontFamily: "Poppins, sans-serif",
+                    fontWeight: "500",
+                    fontSize: "18px",
+                    textAlign: "center",
+                    lineHeight: "27px",
+                    color: "#FFFFFF",
+                  }}
+                >
+                  MEDIA
+                </Typography>
+              </Fade>
+              <Box sx={{ marginTop: "40px" }}>
+                <Fade direction="up">
+                  <Typography
+                    sx={{
+                      fontFamily: "Poppins, sans-serif",
+                      fontWeight: "300",
+                      fontSize: "12px",
+                      textAlign: "center",
+                      lineHeight: "18px",
+                      color: "#FFFFFF",
+                    }}
+                  >
+                    Discover more stories from <br /> the trivitron world
+                  </Typography>
+                </Fade>
+              </Box>
+              <Box sx={{ marginTop: "40px" }}>
+                <Fade direction="up">
+                  <Typography
+                    sx={{
+                      fontFamily: "Poppins, sans-serif",
+                      fontWeight: "300",
+                      fontSize: "12px",
+                      textAlign: "center",
+                      lineHeight: "18px",
+                      // letterSpacing: "8%",
+                      color: "#FFFFFF",
+                    }}
+                  >
+                    Explore more here
+                  </Typography>
+                </Fade>
+              </Box>
+              <Box
                 sx={{
-                  fontFamily: "Poppins, sans-serif",
-                  fontWeight: "500",
-                  fontSize: "18px",
-                  textAlign: "center",
-                  lineHeight: "27px",
-                  color: "#FFFFFF",
+                  display: "flex",
+                  justifyContent: "center",
+                  marginTop: "50px",
                 }}
               >
-                MEDIA
-              </Typography>
-              <Box sx={{  marginTop: "40px",}}>
-                <Typography
+                <Box
                   sx={{
-                    fontFamily: "Poppins, sans-serif",
-                    fontWeight: "300",
-                    fontSize: "12px",
-                    textAlign: "center",
-                    lineHeight: "18px",
-                    color: "#FFFFFF",
-                  
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                    width: "80px",
                   }}
                 >
-                  Discover more stories from <br /> the trivitron world
-                </Typography>
-              </Box>
-              <Box sx={{marginTop:"40px"}}>
-                <Typography
-                  sx={{
-                    fontFamily: "Poppins, sans-serif",
-                    fontWeight: "300",
-                    fontSize: "12px",
-                    textAlign: "center",
-                    lineHeight: "18px",
-                    // letterSpacing: "8%",
-                    color: "#FFFFFF",
-                  }}
-                >
-                  Explore more here
-                </Typography>
-              </Box>
-              <Box sx={{display:"flex", justifyContent:"center" , marginTop:"50px"}}>
-              <Box sx={{display:"flex", flexDirection:"row" , justifyContent:"space-between" , width:"80px" , }}>
-                <Box
-                  component="img"
-                  src={leftarrow}
-                  sx={{width:"20px", height:"20px"}}
-                  onClick={() => sliderRef.current.slickPrev()}
-                />
-                <Box
-                  component="img"
-                  src={rightarrow}
-                  sx={{width:"20px", height:"20px"}}
-                  onClick={() => sliderRef.current.slickNext()}
-                />
-              </Box>
+                  <Fade direction="left">
+                    <Box
+                      component="img"
+                      src={leftarrow}
+                      sx={{ width: "20px", height: "20px" }}
+                      onClick={() => sliderRef.current.slickPrev()}
+                    />
+                  </Fade>
+
+                  <Fade direction="right">
+                    <Box
+                      component="img"
+                      src={rightarrow}
+                      sx={{ width: "20px", height: "20px" }}
+                      onClick={() => sliderRef.current.slickNext()}
+                    />
+                  </Fade>
+                </Box>
               </Box>
               {/* </Box> */}
             </Box>
@@ -136,8 +159,10 @@ const Media = () => {
           lg={9.5}
           // sx={{ backgroundColor: "green" }}
         >
+            <Bounce>
           <Box sx={{ margin: "10px" }}>
-            <Slider ref={sliderRef}  {...settings}>
+
+            <Slider ref={sliderRef} {...settings}>
               {mediaSlider.map((item) => (
                 <Box
                   sx={{
@@ -210,6 +235,7 @@ const Media = () => {
               ))}
             </Slider>
           </Box>
+            </Bounce>
         </Grid>
       </Grid>
     </>

@@ -5,6 +5,8 @@ import { Grid, Box, Typography } from "@mui/material";
 
 import "./Footer.css";
 
+import { Bounce, Fade } from "react-awesome-reveal";
+
 // IMAGES
 import facebook from "../../assets/images/Footer/facebook.png";
 import instagram from "../../assets/images/Footer/instagram.png";
@@ -35,115 +37,117 @@ const Footer = () => {
             lg={9}
             // sx={{ backgroundColor: "green" }}
           >
-            <Box sx={{ marginTop: "45px" }}>
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                }}
-              >
-                {/* BRANDS */}
-                <Box>
-                  <Typography
-                    sx={{
-                      fontFamily: "Poppins, sans-serif",
-                      fontWeight: "600",
-                      fontSize: "15px",
-                      lineHeight: "22.5px",
-                      color: "#0BAEB2",
-                    }}
-                  >
-                    BRANDS
-                  </Typography>
-                </Box>
-                {/* NEWS & INITIATIVE */}
-                <Box>
-                  <Typography
-                    sx={{
-                      fontFamily: "Poppins, sans-serif",
-                      fontWeight: "600",
-                      fontSize: "15px",
-                      lineHeight: "22.5px",
-                      color: "#0BAEB2",
-                    }}
-                  >
-                    NEWS & INITIATIVE
-                  </Typography>
-                </Box>
-                {/* E-STORE */}
-                <Box>
-                  <Typography
-                    sx={{
-                      fontFamily: "Poppins, sans-serif",
-                      fontWeight: "600",
-                      fontSize: "15px",
-                      lineHeight: "22.5px",
-                      color: "#0BAEB2",
-                    }}
-                  >
-                    E-STORE
-                  </Typography>
-                </Box>
-                {/* EVENTS */}
-                <Box>
-                  <Typography
-                    sx={{
-                      fontFamily: "Poppins, sans-serif",
-                      fontWeight: "600",
-                      fontSize: "15px",
-                      lineHeight: "22.5px",
-                      color: "#0BAEB2",
-                    }}
-                  >
-                    EVENTS
-                  </Typography>
-                </Box>
-                {/* BRANCHES & NETWORK */}
-                <Box>
-                  <Typography
-                    sx={{
-                      fontFamily: "Poppins, sans-serif",
-                      fontWeight: "600",
-                      fontSize: "15px",
-                      lineHeight: "22.5px",
-                      color: "#0BAEB2",
-                    }}
-                  >
-                    BRANCHES & NETWORK
-                  </Typography>
-                </Box>
-                {/* SERVICES */}
-                <Box>
-                  <Typography
-                    sx={{
-                      fontFamily: "Poppins, sans-serif",
-                      fontWeight: "600",
-                      fontSize: "15px",
-                      lineHeight: "22.5px",
-                      color: "#0BAEB2",
-                    }}
-                  >
-                    SERVICES
-                  </Typography>
-                </Box>
-                {/* INVESTOR RELATIONS */}
-                <Box>
-                  <Typography
-                    sx={{
-                      fontFamily: "Poppins, sans-serif",
-                      fontWeight: "600",
-                      fontSize: "15px",
-                      lineHeight: "22.5px",
-                      color: "#0BAEB2",
-                    }}
-                  >
-                    INVESTOR RELATIONS
-                  </Typography>
+            <Fade direction="bottom-left">
+              <Box sx={{ marginTop: "45px" }}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                  }}
+                >
+                  {/* BRANDS */}
+                  <Box>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins, sans-serif",
+                        fontWeight: "600",
+                        fontSize: "15px",
+                        lineHeight: "22.5px",
+                        color: "#0BAEB2",
+                      }}
+                    >
+                      BRANDS
+                    </Typography>
+                  </Box>
+                  {/* NEWS & INITIATIVE */}
+                  <Box>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins, sans-serif",
+                        fontWeight: "600",
+                        fontSize: "15px",
+                        lineHeight: "22.5px",
+                        color: "#0BAEB2",
+                      }}
+                    >
+                      NEWS & INITIATIVE
+                    </Typography>
+                  </Box>
+                  {/* E-STORE */}
+                  <Box>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins, sans-serif",
+                        fontWeight: "600",
+                        fontSize: "15px",
+                        lineHeight: "22.5px",
+                        color: "#0BAEB2",
+                      }}
+                    >
+                      E-STORE
+                    </Typography>
+                  </Box>
+                  {/* EVENTS */}
+                  <Box>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins, sans-serif",
+                        fontWeight: "600",
+                        fontSize: "15px",
+                        lineHeight: "22.5px",
+                        color: "#0BAEB2",
+                      }}
+                    >
+                      EVENTS
+                    </Typography>
+                  </Box>
+                  {/* BRANCHES & NETWORK */}
+                  <Box>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins, sans-serif",
+                        fontWeight: "600",
+                        fontSize: "15px",
+                        lineHeight: "22.5px",
+                        color: "#0BAEB2",
+                      }}
+                    >
+                      BRANCHES & NETWORK
+                    </Typography>
+                  </Box>
+                  {/* SERVICES */}
+                  <Box>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins, sans-serif",
+                        fontWeight: "600",
+                        fontSize: "15px",
+                        lineHeight: "22.5px",
+                        color: "#0BAEB2",
+                      }}
+                    >
+                      SERVICES
+                    </Typography>
+                  </Box>
+                  {/* INVESTOR RELATIONS */}
+                  <Box>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins, sans-serif",
+                        fontWeight: "600",
+                        fontSize: "15px",
+                        lineHeight: "22.5px",
+                        color: "#0BAEB2",
+                      }}
+                    >
+                      INVESTOR RELATIONS
+                    </Typography>
+                  </Box>
                 </Box>
               </Box>
-            </Box>
+            </Fade>
           </Grid>
           <Grid
             item
@@ -181,67 +185,69 @@ const Footer = () => {
                 lg={4}
                 // sx={{ backgroundColor: "orange" }}
               >
-                <Box
-                  sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "space-between",
-                    height: "150px",
-                  }}
-                >
-                  <Box>
+                <Fade direction="left">
+                  <Box
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "space-between",
+                      height: "150px",
+                    }}
+                  >
                     <Box>
-                      <Typography
-                        sx={{
-                          fontSize: "15px",
-                          fontWeight: "400",
-                          fontFamily: "Poppins, sans-serif",
-                          color: "#0BAEB2",
-                        }}
-                      >
-                        +91-9876543210
-                      </Typography>
+                      <Box>
+                        <Typography
+                          sx={{
+                            fontSize: "15px",
+                            fontWeight: "400",
+                            fontFamily: "Poppins, sans-serif",
+                            color: "#0BAEB2",
+                          }}
+                        >
+                          +91-9876543210
+                        </Typography>
+                      </Box>
+                      <Box>
+                        <Typography
+                          sx={{
+                            fontSize: "15px",
+                            fontWeight: "400",
+                            fontFamily: "Poppins, sans-serif",
+                            color: "#0BAEB2",
+                          }}
+                        >
+                          info@trivitron.com
+                        </Typography>
+                      </Box>
                     </Box>
                     <Box>
-                      <Typography
-                        sx={{
-                          fontSize: "15px",
-                          fontWeight: "400",
-                          fontFamily: "Poppins, sans-serif",
-                          color: "#0BAEB2",
-                        }}
-                      >
-                        info@trivitron.com
-                      </Typography>
+                      <Box>
+                        <Typography
+                          sx={{
+                            fontSize: "15px",
+                            fontWeight: "400",
+                            fontFamily: "Poppins, sans-serif",
+                            color: "#0BAEB2",
+                          }}
+                        >
+                          © 2024 Trivitron Healthcare
+                        </Typography>
+                      </Box>
+                      <Box>
+                        <Typography
+                          sx={{
+                            fontSize: "15px",
+                            fontWeight: "400",
+                            fontFamily: "Poppins, sans-serif",
+                            color: "#0BAEB2",
+                          }}
+                        >
+                          All rights reserved.
+                        </Typography>
+                      </Box>
                     </Box>
                   </Box>
-                  <Box>
-                    <Box>
-                      <Typography
-                        sx={{
-                          fontSize: "15px",
-                          fontWeight: "400",
-                          fontFamily: "Poppins, sans-serif",
-                          color: "#0BAEB2",
-                        }}
-                      >
-                        © 2024 Trivitron Healthcare
-                      </Typography>
-                    </Box>
-                    <Box>
-                      <Typography
-                        sx={{
-                          fontSize: "15px",
-                          fontWeight: "400",
-                          fontFamily: "Poppins, sans-serif",
-                          color: "#0BAEB2",
-                        }}
-                      >
-                        All rights reserved.
-                      </Typography>
-                    </Box>
-                  </Box>
-                </Box>
+                </Fade>
               </Grid>
               <Grid
                 item
@@ -250,10 +256,10 @@ const Footer = () => {
                 md={4}
                 lg={4}
                 sx={{
-                //   backgroundColor: "pink",
-                  display:"flex",
-                  justifyContent:"center",
-                  flexDirection:"column"
+                  //   backgroundColor: "pink",
+                  display: "flex",
+                  justifyContent: "center",
+                  flexDirection: "column",
                 }}
               >
                 <Box
@@ -265,16 +271,18 @@ const Footer = () => {
                   }}
                 >
                   <Box>
+                  <Fade direction="down">
                     <Typography
                       sx={{
                         fontSize: "12px",
                         fontWeight: "400",
                         fontFamily: "Poppins, sans-serif",
-                        color:"#0BAEB2"
+                        color: "#0BAEB2",
                       }}
                     >
                       Connect with us :
                     </Typography>
+                    </Fade>
                   </Box>
                 </Box>
 
@@ -283,9 +291,10 @@ const Footer = () => {
                     display: "flex",
                     flexDirection: "row",
                     justifyContent: "space-between",
-                    marginTop:"10px"
+                    marginTop: "10px",
                   }}
                 >
+                <Bounce>
                   <Box
                     component="img"
                     sx={{
@@ -296,7 +305,9 @@ const Footer = () => {
                     alt="The house from the offer."
                     src={facebook}
                   />
+                  </Bounce>
 
+                  <Bounce>
                   <Box
                     component="img"
                     sx={{
@@ -307,6 +318,9 @@ const Footer = () => {
                     alt="The house from the offer."
                     src={instagram}
                   />
+                  </Bounce>
+
+                  <Bounce>
                   <Box
                     component="img"
                     sx={{
@@ -317,6 +331,9 @@ const Footer = () => {
                     alt="The house from the offer."
                     src={whatsapp}
                   />
+                  </Bounce>
+
+                  <Bounce>
                   <Box
                     component="img"
                     sx={{
@@ -327,6 +344,9 @@ const Footer = () => {
                     alt="The house from the offer."
                     src={youtube}
                   />
+                  </Bounce>
+
+                  <Bounce>
                   <Box
                     component="img"
                     sx={{
@@ -337,6 +357,9 @@ const Footer = () => {
                     alt="The house from the offer."
                     src={linkedin}
                   />
+                  </Bounce>
+
+                  <Bounce>
                   <Box
                     component="img"
                     sx={{
@@ -347,6 +370,7 @@ const Footer = () => {
                     alt="The house from the offer."
                     src={x}
                   />
+                  </Bounce>
                 </Box>
               </Grid>
               <Grid
@@ -361,6 +385,7 @@ const Footer = () => {
                   }
                 }
               >
+              <Fade direction="right">
                 <Box>
                   {/* Privacy policy */}
                   <Box>
@@ -462,6 +487,7 @@ const Footer = () => {
                     </Typography>
                   </Box>
                 </Box>
+                </Fade>
               </Grid>
             </Grid>
           </Grid>

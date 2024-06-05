@@ -9,6 +9,9 @@ import podcast1 from "../../../../assets/images/Podcast/PodcastImg1.png";
 import podcast2 from "../../../../assets/images/Podcast/PodcastImg2.png";
 import podcast3 from "../../../../assets/images/Podcast/PodcastImg3.png";
 
+
+import { Fade, Bounce } from "react-awesome-reveal";
+
 const Podcasts = () => {
   return (
     <>
@@ -35,6 +38,7 @@ const Podcasts = () => {
                 }}
               >
                 <Box>
+                <Fade direction="left">
                   <Typography
                     sx={{
                       fontSize: "16px",
@@ -47,9 +51,11 @@ const Podcasts = () => {
                   >
                     CONVERSATIONS TO INSPIRE YOU
                   </Typography>
+                  </Fade>
                 </Box>
 
                 <Box sx={{ marginTop: "10px" }}>
+                <Fade direction="right">
                   <Typography
                     sx={{
                       fontSize: "32px",
@@ -62,9 +68,11 @@ const Podcasts = () => {
                   >
                     PODCASTS
                   </Typography>
+                  </Fade>
                 </Box>
 
                 <Box sx={{ marginTop: "30px" }}>
+                <Fade direction="left">
                   <Typography
                     sx={{
                       fontFamily: "Poppins, sans-serif",
@@ -89,6 +97,7 @@ const Podcasts = () => {
                     <br />
                     journey towards a healthier, happier life.
                   </Typography>
+                  </Fade>
                 </Box>
 
                 <Box
@@ -96,6 +105,7 @@ const Podcasts = () => {
                     marginTop: "50px",
                   }}
                 >
+                <Fade direction="right">
                   <Typography
                     sx={{
                       fontFamily: "Poppins, sans-serif",
@@ -110,6 +120,7 @@ const Podcasts = () => {
                   >
                     VIEW MORE PODCASTS
                   </Typography>
+                  </Fade>
                 </Box>
               </Box>
 
@@ -123,6 +134,7 @@ const Podcasts = () => {
                   }}
                 >
                   {/* 1 */}
+                  <Fade direction="right">
                   <Box
                     sx={{
                       display: "flex",
@@ -184,7 +196,9 @@ const Podcasts = () => {
                       </Typography>
                     </Box>
                   </Box>
+                  </Fade>
                   {/* 2 */}
+                  <Fade direction="right">
                   <Box
                     sx={{
                       display: "flex",
@@ -246,7 +260,9 @@ const Podcasts = () => {
                       </Typography>
                     </Box>
                   </Box>
+                  </Fade>
                   {/* 3 */}
+                  <Fade direction="right">
                   <Box
                     sx={{
                       display: "flex",
@@ -309,6 +325,7 @@ const Podcasts = () => {
                       </Typography>
                     </Box>
                   </Box>
+                  </Fade>
                 </Box>
               </Box>
             </Box>
