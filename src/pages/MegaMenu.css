@@ -1,0 +1,69 @@
+/* .menu-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-text {
+    cursor: pointer;
+  }
+  
+  .mega-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 1200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  .menu-container:hover .mega-menu {
+    display: block;
+  }
+  
+  .mega-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mega-menu li {
+    padding: 8px 0;
+  }
+
+   */
+
+
+   /* .menu-container {
+    position: relative;
+    display: inline-block;
+  } */
+
+  /* .mega-menu {
+    position: absolute;
+  }
+   */
+  /* .menu-container:hover .mega-menu {
+    display: block;
+  } */
+
+ /* src/MegaMenu.css */
+
+/* .mega-menu-container {
+  position: relative;
+  background-color: green;
+} */
+.mega-menu {
+  position: absolute;
+  width: 100vw;
+  background-color: red;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+  
